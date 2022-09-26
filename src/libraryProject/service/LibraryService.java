@@ -1,7 +1,7 @@
-package test.service;
+package libraryProject.service;
 
-import test.model.Book;
-import test.model.LibraryMember;
+import libraryProject.model.Book;
+import libraryProject.model.LibraryMember;
 
 import java.util.List;
 
@@ -9,16 +9,16 @@ public interface LibraryService {
     List<LibraryMember> getLibraryMembers();
     void addLibraryMember(LibraryMember member);
 
-    LibraryMember findLibraryMemberById(Long id);
-    void deleteLibraryMemberByID(Long id);
+    void findLibraryMemberById();
+    void deleteLibraryMemberByID();
 
     void addBookToLibrary(Book book);
 
     List<Book> getLibraryBooks();
 
-    Book findLibraryBookById(Long id);
+    void findLibraryBookById();
 
-    void deleteLibraryBookByID(Long id);
+    void deleteLibraryBookByID();
 
     void addBookToMember();
 

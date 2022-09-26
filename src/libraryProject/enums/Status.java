@@ -1,4 +1,4 @@
-package test.enums;
+package libraryProject.enums;
 
 public enum Status {
     AVAILABLE, BUSY

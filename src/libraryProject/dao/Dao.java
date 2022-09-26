@@ -1,6 +1,6 @@
-package test.dao;
+package libraryProject.dao;
 
-import test.model.Library;
+import libraryProject.model.Library;
 
 public class Dao {
     private Library library;

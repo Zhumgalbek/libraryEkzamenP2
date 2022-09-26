@@ -1,6 +1,6 @@
-package test.model;
+package libraryProject.model;
 
-import test.enums.Status;
+import libraryProject.enums.Status;
 
 public class Book {
     private Long bookId;
@@ -10,6 +10,7 @@ public class Book {
     private Status status = Status.AVAILABLE;
 
     private LibraryMember currentHolder;
+
 
     public Long getBookId() {
         return bookId;
@@ -58,4 +59,12 @@ public class Book {
     public void setCurrentHolder(LibraryMember currentHolder) {
         this.currentHolder = currentHolder;
     }
+
+    @Override
+    public String toString() {
+        return
+                "\nBook id : " + bookId +
+                        "\nTitle : " + title ;
+    }
+
 }
